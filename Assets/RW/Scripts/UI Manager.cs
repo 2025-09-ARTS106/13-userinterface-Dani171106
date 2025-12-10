@@ -1,19 +1,14 @@
-using UnityEditor.Build.Reporting;
-using UnityEngine;
 
+using UnityEngine;
+using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-   using UnityEngine.SceneManagement;
+   
     public void StartGame()
 
     {
-    ScenesManager.LoadScene("RocketMouse");
+         SceneManager.LoadScene("RocketMouse");
     }
 
-    // Update is called once per frame
-    void 
-    {
-        
-    }
 }
