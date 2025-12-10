@@ -11,4 +11,12 @@ public class UIManager : MonoBehaviour
          SceneManager.LoadScene("RocketMouse");
     }
 
+    public Animator StartButton;
+    public Animator SettingsButton;
+
+    public void OpenSettings()
+    {
+        StartButton.SetBool("Ishidden", true);
+        SettingsButton.SetBool("Ishidden", true);
+    }
 }
